@@ -30,7 +30,7 @@ h1 {
   margin-bottom: 5px;
 }
 
-#hero {
+#hero-content {
   display: flex;
   align-items: center;
   padding-left: 100px;
@@ -41,10 +41,12 @@ h1 {
     font-style: italic;
     
     h2 {
+      position: relative;
+      z-index: 1;
       font-size: 150px;
       font-weight: 700;
       letter-spacing: -8px;
-      color: transparent;
+      color: white;
       -webkit-text-stroke-width: 3px;
       -webkit-text-stroke: 100%;
       -webkit-text-stroke-color: black;
@@ -57,35 +59,55 @@ h1 {
         font-size: 220px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
-        color: black;
         position: relative;
         top: 25px;
         margin-top: -50px;
+        -webkit-text-stroke-width: 5px;
+      }
+    }
+
+    #services {
+      margin-top: -8px;
+      
+      h3 {
+        font-size: 25px;
+        display: inline-block;
+        margin-right: 4px;
+      }
+      
+      span {
+        position: relative;
+        margin-right: 4px;
+        bottom: 2px;
       }
     }
 
     height: 100%;
   }
-
-  margin-bottom: 8px;
 }
 
 .line {
+  position: relative;
+  top: -2px;
+  z-index: 1;
+  background: #fafafa;
+  padding-top: 8px;
+  border-top: 2px solid #212121;
   border-bottom: 2px solid #212121;
 }
 
-#services {
-  margin-top: -8px;
+#bg-img {
+  position: fixed;
+  top: 75px;
+  left: 35%;
+  width: 50vw;
+  filter: saturate(0);
+}
 
-  h3 {
-    font-size: 25px;
-    display: inline-block;
-    margin-right: 4px;
-  }
-
-  span {
-    position: relative;
-    margin-right: 4px;
-    bottom: 2px;
-  }
+#gap-cover {
+  position: relative;
+  z-index: 1;
+  height: 200px;
+  background: #fafafa;
+  scale: 1.02;
 }
