@@ -50,10 +50,17 @@ table {
 
 body {
   background: #fafafa;
+  padding: 0 75px;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
   text-transform: uppercase;
+}
+
+header {
+  padding-top: 65px;
+  padding-bottom: 60px;
 }
 
 h1 {
@@ -61,10 +68,29 @@ h1 {
   font-weight: 600;
 }
 
-h2 {
+#hero {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  border: 2px solid #212121;
+  min-height: 75vh;
+}
+#hero div {
+  height: 100%;
+}
+#hero div h2 {
   font-size: 150px;
   font-style: italic;
   font-weight: 700;
+}
+#hero div h2:nth-of-type(2) {
+  margin-top: -50px;
+}
+#hero div h2 span {
+  font-size: 220px;
+  position: relative;
+  top: 25px;
+  margin-top: -50px;
 }
 
 #services h3 {
