@@ -1,0 +1,35 @@
+@use 'reset';
+
+body {
+  background: #fafafa;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 150px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+
+#services {
+  h3 {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  span {
+    position: relative;
+    margin-right: 4px;
+    bottom: 2px;
+  }
+}
