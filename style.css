@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +53,7 @@ body {
   background: #fafafa;
   padding: 0 75px;
   min-height: 100vh;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 h1, h2, h3 {
@@ -68,33 +70,57 @@ h1 {
   font-weight: 600;
 }
 
+.rectangle {
+  border: 2px solid #212121;
+  height: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
 #hero {
   display: flex;
   align-items: center;
   padding-left: 100px;
   border: 2px solid #212121;
   min-height: 75vh;
+  margin-bottom: 8px;
 }
 #hero div {
+  font-style: italic;
   height: 100%;
 }
 #hero div h2 {
   font-size: 150px;
-  font-style: italic;
   font-weight: 700;
+  letter-spacing: -8px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke: 100%;
+  -webkit-text-stroke-color: black;
 }
 #hero div h2:nth-of-type(2) {
   margin-top: -50px;
 }
 #hero div h2 span {
   font-size: 220px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: black;
   position: relative;
   top: 25px;
   margin-top: -50px;
 }
 
+.line {
+  border-bottom: 2px solid #212121;
+}
+
+#services {
+  margin-top: -8px;
+}
 #services h3 {
-  font-size: 20px;
+  font-size: 25px;
   display: inline-block;
   margin-right: 4px;
 }
