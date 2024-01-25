@@ -87,7 +87,7 @@ h1 {
 }
 
 #scroll {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 77%;
   background: transparent;
@@ -96,14 +96,19 @@ h1 {
   height: 120px;
   font-size: 21px;
   letter-spacing: 1px;
-  color: white;
+  color: #fafafa;
   text-transform: uppercase;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #fafafa;
+  
+  a {
+    color: #fafafa;
+    text-decoration: none;
+  }
 
   &:hover {
     cursor: pointer;
-    background: rgba($color: white, $alpha: 0.2);
+    background: rgba($color: #fafafa, $alpha: 0.2);
   }
 }
 
@@ -131,4 +136,46 @@ h1 {
   height: 200px;
   background: #fafafa;
   scale: 1.02;
+}
+
+#about {
+  position: relative;
+  top: 2px;
+  height: 500px;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 100px;
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  h4 {
+    text-align: right;
+    font-size: 50px;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  #about-img {
+    text-align: right;
+    
+    img {
+      position: relative;
+      z-index: 1;
+      top: -150px;
+      width: 525px;
+      filter: hue-rotate(150deg);
+      filter: drop-shadow(-10px -10px);
+    }
+  }
+}
+
+footer {
+  position: relative;
+  height: 400px;
+  background-color: #fafafa;
 }

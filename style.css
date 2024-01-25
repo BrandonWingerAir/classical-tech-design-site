@@ -127,7 +127,7 @@ h1 {
 }
 
 #scroll {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 77%;
   background: transparent;
@@ -136,14 +136,18 @@ h1 {
   height: 120px;
   font-size: 21px;
   letter-spacing: 1px;
-  color: white;
+  color: #fafafa;
   text-transform: uppercase;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid #fafafa;
+}
+#scroll a {
+  color: #fafafa;
+  text-decoration: none;
 }
 #scroll:hover {
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(250, 250, 250, 0.2);
 }
 
 .line {
@@ -170,4 +174,41 @@ h1 {
   height: 200px;
   background: #fafafa;
   scale: 1.02;
+}
+
+#about {
+  position: relative;
+  top: 2px;
+  height: 500px;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 100px;
+}
+#about p {
+  margin-bottom: 14px;
+}
+#about h4 {
+  text-align: right;
+  font-size: 50px;
+}
+#about h4 span {
+  font-size: 30px;
+}
+#about #about-img {
+  text-align: right;
+}
+#about #about-img img {
+  position: relative;
+  z-index: 1;
+  top: -150px;
+  width: 525px;
+  filter: hue-rotate(150deg);
+  filter: drop-shadow(-10px -10px);
+}
+
+footer {
+  position: relative;
+  height: 400px;
+  background-color: #fafafa;
 }/*# sourceMappingURL=style.css.map */
