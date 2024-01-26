@@ -53,8 +53,23 @@ h1 {
       -webkit-text-stroke: 100%;
       -webkit-text-stroke-color: black;
 
+      @keyframes filling {
+        from {
+          background-position: center 100%;
+        }
+        to {
+          background-position: center 0%;
+        }
+      }
+
       &:nth-of-type(2) {
         margin-top: -50px;
+        color: #757575;
+        background-image:  url(/images/pexels-scott-webb-2824173.jpg);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: filling 45s linear forwards;
+        animation-iteration-count: 3;
       }
 
       span {
@@ -98,7 +113,7 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  top: 77%;
+  bottom: 11%;
   background: transparent;
   right: 25%;
   width: 120px;
@@ -205,7 +220,9 @@ footer {
     }
 
     #bg-img {
+      top: 19%;
       right: 12%;
+      opacity: 54%;
     }
   }
 
@@ -268,7 +285,6 @@ footer {
     #bg-img {
       top: 220px;
       width: 62vw;
-      opacity: 58%;
     }
   }
 
@@ -276,8 +292,8 @@ footer {
     z-index: 1;
     width: 94px;
     height: 94px;
-    top: 90%;
-    font-size: 18px;
+    bottom: 7%;
+    font-size: 13px;
   }
 }
 
@@ -287,7 +303,9 @@ footer {
   }
 
   #scroll {
-    top: 87%;
+    width: 82px;
+    height: 82px;
+    bottom: 4%;
   }
 }
 
@@ -311,7 +329,7 @@ footer {
     z-index: -1;
     width: 72px;
     height: 72px;
-    top: 79%;
+    bottom: 10%;
     font-size: 11px;
     font-weight: 600;
   }
