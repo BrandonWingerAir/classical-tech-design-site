@@ -6,6 +6,7 @@ body {
   padding: 0 75px;
   min-height: 100vh;
   font-family: 'Bebas Neue', sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -36,6 +37,7 @@ h1 {
   padding-left: 100px;
   border: 2px solid #212121;
   min-height: 75vh;
+  overflow-x: hidden;
 
   div {
     font-style: italic;
@@ -82,8 +84,14 @@ h1 {
         bottom: 2px;
       }
     }
+  }
 
-    height: 100%;
+  #bg-img {
+    position: fixed;
+    top: 75px;
+    right: 14%;
+    width: 50vw;
+    filter: saturate(0);
   }
 }
 
@@ -121,14 +129,6 @@ h1 {
   padding-top: 8px;
   border-top: 2px solid #212121;
   border-bottom: 2px solid #212121;
-}
-
-#bg-img {
-  position: fixed;
-  top: 75px;
-  left: 36%;
-  width: 50vw;
-  filter: saturate(0);
 }
 
 #gap-cover {
@@ -182,16 +182,49 @@ footer {
 }
 
 @media screen and (max-width: 988px) {
-  #hero-content div h2 {
-    font-size: 115px;
+  #hero-content {
+    padding: 0 42px;
+
+    div {
+      h2 {
+        font-size: 114px;
+
+        &:nth-of-type(2) {
+          margin-top: -10px;
+        }
+
+        span {
+          font-size: 135px;
+          top: 8px;
+        }
+      }
+
+      #services {
+        margin-top: 10px;
+      }
+    }
+
+    #bg-img {
+      right: 12%;
+    }
   }
 
   #scroll {
     z-index: -1;
-    width: 100px;
-    height: 100px;
+    width: 84px;
+    height: 84px;
     color: #212121;
     border-color: #212121;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+
+    #about-img img {
+      width: 240px;
+    }
   }
 }
 
@@ -217,17 +250,25 @@ footer {
 
     div h2 {
       letter-spacing: -1px;
-      font-size: 80px;
-
+      font-size: 78px;
+      -webkit-text-stroke-width: 2px;
       
       &:nth-of-type(2) {
-        margin-top: -20px;
+        margin-top: -12px;
       }
 
       span {
-        font-size: 100px;
-        top: 12px;
+        font-size: 72px;
+        top: 3px;
+        margin: 0 -4px;
+        -webkit-text-stroke-width: 3px;
       }
+    }
+
+    #bg-img {
+      top: 220px;
+      width: 62vw;
+      opacity: 58%;
     }
   }
 
@@ -237,11 +278,6 @@ footer {
     height: 94px;
     top: 90%;
     font-size: 18px;
-  }
-
-  #bg-img {
-    top: 315px;
-    width: 55vw;
   }
 }
 
@@ -267,16 +303,16 @@ footer {
 
   #bg-img {
     top: 225px;
-    left: 33%;
+    right: 3%;
     width: 55vw;
   }
 
   #scroll {
     z-index: -1;
-    width: 74px;
-    height: 74px;
-    top: 82%;
-    font-size: 12px;
+    width: 72px;
+    height: 72px;
+    top: 79%;
+    font-size: 11px;
     font-weight: 600;
   }
 }
@@ -284,5 +320,23 @@ footer {
 @media screen and (max-width: 400px) {
   #hero-content div h2 {
     font-size: 56px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body {
+    padding: 34px;
+  }
+
+  #hero-content div h2 {
+    font-size: 54px;
+
+    &:nth-of-type(2) {
+      margin-top: -10px;
+    }
+    
+    span {
+      font-size: 65px;
+    }
   }
 }
