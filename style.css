@@ -109,13 +109,14 @@ h1 {
   font-weight: 500;
   position: relative;
   top: 25px;
-  margin-top: -50px;
   -webkit-text-stroke-width: 5px;
 }
 #hero-content div #services {
   margin-top: -8px;
 }
 #hero-content div #services h3 {
+  position: relative;
+  z-index: 1;
   font-size: 25px;
   display: inline-block;
   margin-right: 4px;
@@ -163,7 +164,7 @@ h1 {
 #bg-img {
   position: fixed;
   top: 75px;
-  left: 35%;
+  left: 36%;
   width: 50vw;
   filter: saturate(0);
 }
@@ -211,4 +212,92 @@ footer {
   position: relative;
   height: 400px;
   background-color: #fafafa;
+}
+
+@media screen and (max-width: 988px) {
+  #hero-content div h2 {
+    font-size: 115px;
+  }
+  #scroll {
+    z-index: -1;
+    width: 100px;
+    height: 100px;
+    color: #212121;
+    border-color: #212121;
+  }
+}
+@media screen and (max-width: 786px) {
+  #hero-content div h2 {
+    font-size: 105px;
+  }
+  #scroll {
+    width: 94px;
+    height: 94px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 750px) {
+  body {
+    padding: 40px;
+  }
+  #hero-content {
+    padding-left: 20px;
+  }
+  #hero-content div h2 {
+    letter-spacing: -1px;
+    font-size: 80px;
+  }
+  #hero-content div h2:nth-of-type(2) {
+    margin-top: -20px;
+  }
+  #hero-content div h2 span {
+    font-size: 100px;
+    top: 12px;
+  }
+  #scroll {
+    z-index: 1;
+    width: 94px;
+    height: 94px;
+    top: 90%;
+    font-size: 18px;
+  }
+  #bg-img {
+    top: 315px;
+    width: 55vw;
+  }
+}
+@media screen and (max-width: 488px) {
+  #hero-content div h2 {
+    font-size: 68px;
+  }
+  #scroll {
+    top: 87%;
+  }
+}
+@media screen and (max-width: 430px) {
+  header {
+    padding-top: 10px;
+    padding-bottom: 46px;
+  }
+  #hero-content div h2 {
+    font-size: 62px;
+  }
+  #bg-img {
+    top: 225px;
+    left: 33%;
+    width: 55vw;
+  }
+  #scroll {
+    z-index: -1;
+    width: 74px;
+    height: 74px;
+    top: 82%;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 400px) {
+  #hero-content div h2 {
+    font-size: 56px;
+  }
 }/*# sourceMappingURL=style.css.map */
