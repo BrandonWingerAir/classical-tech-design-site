@@ -264,9 +264,13 @@ footer {
   }
   #about #about-img img {
     width: 240px;
+    top: 35px;
   }
 }
 @media screen and (max-width: 786px) {
+  #hero-content {
+    min-height: calc(75vh - 60px);
+  }
   #hero-content div h2 {
     font-size: 105px;
   }
@@ -324,6 +328,9 @@ footer {
     padding-top: 10px;
     padding-bottom: 46px;
   }
+  header h1 {
+    font-size: 22px;
+  }
   #hero-content div h2 {
     font-size: 62px;
   }
@@ -336,7 +343,7 @@ footer {
     z-index: -1;
     width: 72px;
     height: 72px;
-    bottom: 10%;
+    bottom: 18%;
     font-size: 11px;
     font-weight: 600;
   }
