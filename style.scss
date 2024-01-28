@@ -281,7 +281,7 @@ footer {
 
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(85vh - 112px);
+    min-height: calc(86vh - 112px);
 
     div h2 {
       font-size: 105px;
@@ -347,7 +347,7 @@ footer {
   #scroll {
     width: 82px;
     height: 82px;
-    bottom: 12vh;
+    bottom: 15vh;
   }
 }
 
@@ -391,7 +391,11 @@ footer {
 
 @media screen and (max-width: 380px) {
   body {
-    padding: 34px;
+    padding-top: 25px;
+  }
+
+  header {
+    padding-bottom: 30px;
   }
 
   #hero-content div h2 {
@@ -404,5 +408,11 @@ footer {
     span {
       font-size: 65px;
     }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #scroll {
+    bottom: 12vh;
   }
 }

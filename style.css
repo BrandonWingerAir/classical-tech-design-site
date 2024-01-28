@@ -297,7 +297,7 @@ footer a {
 }
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(85vh - 112px);
+    min-height: calc(86vh - 112px);
   }
   #hero-content div h2 {
     font-size: 105px;
@@ -350,7 +350,7 @@ footer a {
   #scroll {
     width: 82px;
     height: 82px;
-    bottom: 12vh;
+    bottom: 15vh;
   }
 }
 @media screen and (max-width: 430px) {
@@ -384,7 +384,10 @@ footer a {
 }
 @media screen and (max-width: 380px) {
   body {
-    padding: 34px;
+    padding-top: 25px;
+  }
+  header {
+    padding-bottom: 30px;
   }
   #hero-content div h2 {
     font-size: 54px;
@@ -394,5 +397,10 @@ footer a {
   }
   #hero-content div h2 span {
     font-size: 65px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #scroll {
+    bottom: 12vh;
   }
 }/*# sourceMappingURL=style.css.map */
