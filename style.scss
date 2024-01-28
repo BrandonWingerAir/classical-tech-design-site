@@ -113,7 +113,7 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  bottom: 11%;
+  bottom: 110px;
   background: rgba($color: #000000, $alpha: 0.3);
   right: 25%;
   width: 120px;
@@ -230,6 +230,7 @@ footer {
     z-index: -1;
     width: 84px;
     height: 84px;
+    background: rgba($color: #000000, $alpha: 0.05);
     color: #212121;
     border-color: #212121;
     font-weight: 600;
@@ -248,7 +249,7 @@ footer {
 
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(75vh - 60px);
+    min-height: calc(75vh - 112px);
 
     div h2 {
       font-size: 105px;
@@ -298,7 +299,6 @@ footer {
     z-index: 1;
     width: 94px;
     height: 94px;
-    bottom: 7%;
     font-size: 13px;
   }
 }
@@ -311,12 +311,10 @@ footer {
   #scroll {
     width: 82px;
     height: 82px;
-    bottom: 4%;
   }
 }
 
 @media screen and (max-width: 430px) {
-  
   header {
     padding-top: 10px;
     padding-bottom: 46px;
@@ -340,7 +338,7 @@ footer {
     z-index: -1;
     width: 72px;
     height: 72px;
-    bottom: 18%;
+    bottom: 190px;
     font-size: 11px;
     font-weight: 600;
   }
