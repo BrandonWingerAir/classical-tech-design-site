@@ -65,7 +65,7 @@ h1 {
       &:nth-of-type(2) {
         margin-top: -50px;
         color: #757575;
-        background-image:  url(/images/pexels-scott-webb-2824173.jpg);
+        background-image:  url('classical-tech-design-site/images/pexels-scott-webb-2824173.jpg');
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         animation: filling 45s linear forwards;
@@ -114,7 +114,7 @@ h1 {
   position: absolute;
   z-index: 1;
   bottom: 11%;
-  background: transparent;
+  background: rgba($color: #000000, $alpha: 0.3);
   right: 25%;
   width: 120px;
   height: 120px;
