@@ -65,7 +65,7 @@ h1 {
       &:nth-of-type(2) {
         margin-top: -50px;
         color: #757575;
-        background-image:  url('classical-tech-design-site/images/pexels-scott-webb-2824173.jpg');
+        background-image:  url('images/pexels-scott-webb-2824173.jpg');
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         animation: filling 45s linear forwards;
@@ -103,7 +103,7 @@ h1 {
 
   #bg-img {
     position: fixed;
-    top: 75px;
+    top: 8%;
     right: 14%;
     width: 50vw;
     filter: saturate(0);
@@ -113,7 +113,7 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  bottom: 110px;
+  top: 78%;
   background: rgba($color: #000000, $alpha: 0.3);
   right: 25%;
   width: 120px;
@@ -157,19 +157,19 @@ h1 {
 #about {
   position: relative;
   top: 2px;
-  height: 500px;
   background-color: #fafafa;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 100px;
+  margin-bottom: -110px;
 
   p {
     margin-bottom: 14px;
   }
 
   h4 {
-    text-align: right;
     font-size: 50px;
+    margin-bottom: 14px;
 
     span {
       font-size: 30px;
@@ -190,10 +190,29 @@ h1 {
   }
 }
 
+#hide-bg-img {
+  position: relative;
+  top: -5vh;
+  height: 2vh;
+  background: #fafafa;
+  transform: scaleY(1000%);
+}
+
 footer {
   position: relative;
-  height: 400px;
   background-color: #fafafa;
+  text-align: center;
+  padding: 50px;
+
+  a {
+    background: #212121;
+    padding: 14px 20px 10px;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
 }
 
 @media screen and (max-width: 988px) {
@@ -239,10 +258,15 @@ footer {
 
   #about {
     grid-template-columns: 1fr;
+    margin-bottom: 15px;
 
-    #about-img img {
-      width: 240px;
-      top: 35px;
+    #about-img {
+      text-align: center;
+
+      img {
+        width: 240px;
+        top: 35px;
+      }
     }
   }
 }
@@ -261,6 +285,10 @@ footer {
     width: 94px;
     height: 94px;
     font-size: 18px;
+  }
+
+  #about {
+    padding: 0;
   }
 }
 
@@ -290,13 +318,14 @@ footer {
     }
 
     #bg-img {
-      top: 220px;
-      width: 62vw;
+      top: 21%;
+      width: 48vw;
     }
   }
 
   #scroll {
     z-index: 1;
+    top: 74%;
     width: 94px;
     height: 94px;
     font-size: 13px;
@@ -311,6 +340,7 @@ footer {
   #scroll {
     width: 82px;
     height: 82px;
+    top: 69%;
   }
 }
 
@@ -324,21 +354,23 @@ footer {
     }
   }
 
-  #hero-content div h2 {
-    font-size: 62px;
+  #hero-content {
+    div h2 {
+      font-size: 62px;
+    }
+    
+    #bg-img {
+      top: 23%;
+      width: 58vw;
+      right: 17%;
+    }
   }
 
-  #bg-img {
-    top: 225px;
-    right: 3%;
-    width: 55vw;
-  }
 
   #scroll {
     z-index: -1;
     width: 72px;
     height: 72px;
-    bottom: 190px;
     font-size: 11px;
     font-weight: 600;
   }
