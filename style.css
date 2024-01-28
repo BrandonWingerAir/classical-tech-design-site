@@ -110,13 +110,8 @@ h1 {
   }
 }
 #hero-content div h2:nth-of-type(2) {
-  margin-top: -50px;
-  color: #757575;
-  background-image: url("images/pexels-scott-webb-2824173.jpg");
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: filling 45s linear forwards;
-  animation-iteration-count: 3;
+  margin-top: -66px;
+  color: #4db6ac;
 }
 #hero-content div h2 span {
   font-size: 220px;
@@ -152,7 +147,7 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  top: 78%;
+  bottom: 12vh;
   background: rgba(0, 0, 0, 0.3);
   right: 25%;
   width: 120px;
@@ -186,7 +181,7 @@ h1 {
 #gap-cover {
   position: relative;
   z-index: 1;
-  height: 200px;
+  height: 300px;
   background: #fafafa;
   scale: 1.02;
 }
@@ -212,14 +207,17 @@ h1 {
 }
 #about #about-img {
   text-align: right;
+  padding-right: 10%;
 }
 #about #about-img img {
   position: relative;
   z-index: 1;
-  top: -150px;
-  width: 525px;
+  top: -30px;
+  width: 300px;
+  padding: 0 22px 0 52px;
   filter: hue-rotate(150deg);
   filter: drop-shadow(-10px -10px);
+  box-shadow: 0px 0px 105px 45px rgba(38, 166, 153, 0.9);
 }
 
 #hide-bg-img {
@@ -234,7 +232,8 @@ footer {
   position: relative;
   background-color: #fafafa;
   text-align: center;
-  padding: 50px;
+  padding-top: 275px;
+  padding-bottom: 50px;
 }
 footer a {
   background: #212121;
@@ -248,7 +247,7 @@ footer a {
 
 @media screen and (max-width: 988px) {
   #hero-content {
-    padding: 0 42px;
+    padding-left: 42px;
   }
   #hero-content div h2 {
     font-size: 114px;
@@ -264,6 +263,7 @@ footer a {
     margin-top: 10px;
   }
   #hero-content #bg-img {
+    position: absolute;
     top: 19%;
     right: 12%;
     opacity: 54%;
@@ -278,21 +278,26 @@ footer a {
     font-weight: 600;
     font-size: 12px;
   }
+  #gap-cover {
+    display: none;
+  }
   #about {
     grid-template-columns: 1fr;
-    margin-bottom: 15px;
+    margin-bottom: 155px;
+    top: 55px;
   }
   #about #about-img {
     text-align: center;
+    padding-right: 0;
   }
   #about #about-img img {
     width: 240px;
-    top: 35px;
+    top: 50%;
   }
 }
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(75vh - 112px);
+    min-height: calc(85vh - 112px);
   }
   #hero-content div h2 {
     font-size: 105px;
@@ -333,7 +338,6 @@ footer a {
   }
   #scroll {
     z-index: 1;
-    top: 74%;
     width: 94px;
     height: 94px;
     font-size: 13px;
@@ -346,7 +350,7 @@ footer a {
   #scroll {
     width: 82px;
     height: 82px;
-    top: 69%;
+    bottom: 12vh;
   }
 }
 @media screen and (max-width: 430px) {
