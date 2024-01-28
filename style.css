@@ -147,9 +147,9 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  bottom: 12vh;
   background: rgba(0, 0, 0, 0.3);
-  right: 25%;
+  bottom: 10vw;
+  right: 25vw;
   width: 120px;
   height: 120px;
   font-size: 21px;
@@ -193,17 +193,24 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 100px;
-  margin-bottom: -110px;
-}
-#about p {
-  margin-bottom: 14px;
+  bottom: -60px;
 }
 #about h4 {
   font-size: 50px;
   margin-bottom: 14px;
 }
-#about h4 span {
-  font-size: 30px;
+#about h4:last-of-type {
+  border-bottom: 1px solid #bdbdbd;
+  display: inline-block;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+}
+#about h4:last-of-type span {
+  font-size: 38px;
+}
+#about p {
+  font-size: 20px;
+  margin-bottom: 14px;
 }
 #about #about-img {
   text-align: right;
@@ -217,7 +224,7 @@ h1 {
   padding: 0 22px 0 52px;
   filter: hue-rotate(150deg);
   filter: drop-shadow(-10px -10px);
-  box-shadow: 0px 0px 105px 45px rgba(38, 166, 153, 0.9);
+  box-shadow: 0px 0px 105px 45px rgba(38, 166, 153, 0.6);
 }
 
 #hide-bg-img {
@@ -277,6 +284,7 @@ footer a {
     border-color: #212121;
     font-weight: 600;
     font-size: 12px;
+    bottom: 15vh;
   }
   #gap-cover {
     display: none;
@@ -297,7 +305,7 @@ footer a {
 }
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(86vh - 112px);
+    min-height: calc(80vh - 112px);
   }
   #hero-content div h2 {
     font-size: 105px;
@@ -350,7 +358,7 @@ footer a {
   #scroll {
     width: 82px;
     height: 82px;
-    bottom: 15vh;
+    bottom: 38vw;
   }
 }
 @media screen and (max-width: 430px) {
@@ -362,7 +370,7 @@ footer a {
     font-size: 22px;
   }
   #hero-content div h2 {
-    font-size: 62px;
+    font-size: 58px;
   }
   #hero-content #bg-img {
     top: 23%;
@@ -379,7 +387,10 @@ footer a {
 }
 @media screen and (max-width: 400px) {
   #hero-content div h2 {
-    font-size: 56px;
+    font-size: 52px;
+  }
+  #hero-content div #services h3 {
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -390,7 +401,7 @@ footer a {
     padding-bottom: 30px;
   }
   #hero-content div h2 {
-    font-size: 54px;
+    font-size: 51px;
   }
   #hero-content div h2:nth-of-type(2) {
     margin-top: -10px;
@@ -398,9 +409,10 @@ footer a {
   #hero-content div h2 span {
     font-size: 65px;
   }
-}
-@media screen and (max-width: 370px) {
-  #scroll {
-    bottom: 12vh;
+  #hero-content div #services h3 {
+    font-size: 21px;
+  }
+  #hero-content #scroll {
+    bottom: 22vh;
   }
 }/*# sourceMappingURL=style.css.map */

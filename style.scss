@@ -108,9 +108,9 @@ h1 {
 #scroll {
   position: absolute;
   z-index: 1;
-  bottom: 12vh;
   background: rgba($color: #000000, $alpha: 0.3);
-  right: 25%;
+  bottom: 10vw;
+  right: 25vw;
   width: 120px;
   height: 120px;
   font-size: 21px;
@@ -156,19 +156,28 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 100px;
-  margin-bottom: -110px;
-
-  p {
-    margin-bottom: 14px;
-  }
-
+  bottom: -60px;
+  
   h4 {
     font-size: 50px;
     margin-bottom: 14px;
 
-    span {
-      font-size: 30px;
+    &:last-of-type {
+      border-bottom: 1px solid #bdbdbd;
+      display: inline-block;
+      padding-bottom: 11px;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 38px;
+      }
     }
+    
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 14px;
   }
 
   #about-img {
@@ -183,9 +192,9 @@ h1 {
       padding: 0 22px 0 52px;
       filter: hue-rotate(150deg);
       filter: drop-shadow(-10px -10px);
-      -webkit-box-shadow:0px 0px 105px 45px rgba(38,166,153,0.9);
-      -moz-box-shadow: 0px 0px 105px 45px rgba(38,166,153,0.9);
-      box-shadow: 0px 0px 105px 45px rgba(38,166,153,0.9);
+      -webkit-box-shadow:0px 0px 105px 45px rgba(38,166,153,0.6);
+      -moz-box-shadow: 0px 0px 105px 45px rgba(38,166,153,0.6);
+      box-shadow: 0px 0px 105px 45px rgba(38,166,153,0.6);
     }
   }
 }
@@ -256,6 +265,7 @@ footer {
     border-color: #212121;
     font-weight: 600;
     font-size: 12px;
+    bottom: 15vh;
   }
 
   #gap-cover {
@@ -281,7 +291,7 @@ footer {
 
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(86vh - 112px);
+    min-height: calc(80vh - 112px);
 
     div h2 {
       font-size: 105px;
@@ -347,7 +357,7 @@ footer {
   #scroll {
     width: 82px;
     height: 82px;
-    bottom: 15vh;
+    bottom: 38vw;
   }
 }
 
@@ -363,7 +373,7 @@ footer {
 
   #hero-content {
     div h2 {
-      font-size: 62px;
+      font-size: 58px;
     }
     
     #bg-img {
@@ -384,8 +394,14 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-  #hero-content div h2 {
-    font-size: 56px;
+  #hero-content div {
+    h2 {
+      font-size: 52px;
+    }
+
+    #services h3 {
+      font-size: 23px;
+    }
   }
 }
 
@@ -398,21 +414,27 @@ footer {
     padding-bottom: 30px;
   }
 
-  #hero-content div h2 {
-    font-size: 54px;
-
-    &:nth-of-type(2) {
-      margin-top: -10px;
-    }
+  #hero-content {
+    div {
+      h2 {
+        font-size: 51px;
     
-    span {
-      font-size: 65px;
-    }
-  }
-}
+        &:nth-of-type(2) {
+          margin-top: -10px;
+        }
+        
+        span {
+          font-size: 65px;
+        }
+      }
 
-@media screen and (max-width: 370px) {
-  #scroll {
-    bottom: 12vh;
+      #services h3 {
+        font-size: 21px;
+      }
+    }
+  
+    #scroll {
+      bottom: 22vh;
+    }
   }
 }
