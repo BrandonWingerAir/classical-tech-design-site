@@ -10,4 +10,4 @@ Built with HTML5, CSS3 and SCSS.
 
 ![site hero design by nick hart](/images/site-hero-design-by-nick-hart.jpg)
 
-Based on a design by [Nick Hart](https://dribbble.com/nickhart) on dribbble.
+Based on a [design](https://dribbble.com/shots/20886580-Design-site-hero) by [Nick Hart](https://dribbble.com/nickhart) on dribbble.
