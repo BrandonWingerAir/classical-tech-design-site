@@ -79,10 +79,29 @@ header {
   display: flex;
   justify-content: space-between;
 }
-header h1 {
+header div h1 {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 1px;
+  display: inline-block;
+  margin-right: 8px;
+}
+header div img {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  position: relative;
+  bottom: -3px;
+  animation: animate-logo 5s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes animate-logo {
+  from {
+    filter: brightness(1);
+  }
+  to {
+    filter: brightness(0);
+  }
 }
 header a {
   position: relative;
@@ -124,14 +143,6 @@ header a {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke: 100%;
   -webkit-text-stroke-color: black;
-}
-@keyframes filling {
-  from {
-    background-position: center 100%;
-  }
-  to {
-    background-position: center 0%;
-  }
 }
 #hero-content div h2:nth-of-type(2) {
   margin-top: -66px;
@@ -175,7 +186,7 @@ header a {
   width: 600px;
   height: 1px;
   background: #bdbdbd;
-  opacity: 90%;
+  opacity: 45%;
 }
 
 .loader:last-of-type {
@@ -530,20 +541,30 @@ footer h5 a:hover {
     height: 82px;
     bottom: 38vw;
   }
+  .loader {
+    display: none;
+  }
+  footer h5 {
+    font-size: 17px;
+  }
 }
 @media screen and (max-width: 430px) {
   header {
     padding-top: 10px;
     padding-bottom: 46px;
   }
-  header h1 {
+  header div h1 {
     font-size: 22px;
+  }
+  header a {
+    font-size: 16px;
+    top: -6px;
   }
   #hero-content div h2 {
     font-size: 58px;
   }
   #hero-content #bg-img {
-    top: 23%;
+    top: 54vw;
     width: 58vw;
     right: 17%;
   }
@@ -554,13 +575,34 @@ footer h5 a:hover {
     font-size: 11px;
     font-weight: 600;
   }
+  footer h5 {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 400px) {
+  body {
+    padding: 25px 35px 40px 35px;
+  }
+  header div h1 {
+    font-size: 20px;
+  }
+  header div img {
+    width: 23px;
+    height: 23px;
+    bottom: -4px;
+  }
+  header a {
+    letter-spacing: 2px;
+    top: -6px;
+  }
   #hero-content div h2 {
     font-size: 52px;
   }
   #hero-content div #services h3 {
     font-size: 23px;
+  }
+  footer h5 {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 380px) {
