@@ -16,12 +16,27 @@ h1, h2, h3 {
 header {
   padding-top: 65px;
   padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  a {
+    position: relative;
+    border: 1px solid #9e9e9e;
+    padding: 12px;
+    top: -12px;
+    font-size: 21px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+  }
 }
 
-h1 {
-  font-size: 25px;
-  font-weight: 600;
-}
 
 .rectangle {
   border: 2px solid #212121;
@@ -36,7 +51,7 @@ h1 {
   align-items: center;
   padding-left: 100px;
   border: 2px solid #212121;
-  min-height: 75vh;
+  min-height: 72vh;
   overflow-x: hidden;
 
   div {
@@ -215,13 +230,30 @@ footer {
   padding-bottom: 50px;
 
   a {
+    text-decoration: none;
+  }
+
+  button a {
     background: #212121;
     padding: 14px 20px 10px;
     height: 100px;
-    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     font-size: 17px;
     letter-spacing: 2px;
+  }
+
+  h5 {
+    margin-top: 70px;
+    font-size: 21px;
+
+    a {
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -436,5 +468,11 @@ footer {
     #scroll {
       bottom: 22vh;
     }
+  }
+}
+
+@media screen and (max-height: 667px) {
+  #scroll {
+    display: none;
   }
 }
