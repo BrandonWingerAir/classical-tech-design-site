@@ -303,11 +303,10 @@ header {
 
 #about {
   position: relative;
-  top: 2px;
   background-color: #fafafa;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 100px;
+  padding: 125px 100px 0;
   top: -50px;
 
   article {
@@ -367,7 +366,7 @@ footer {
   position: relative;
   background-color: #fafafa;
   text-align: center;
-  padding-top: 275px;
+  padding-top: 265px;
   padding-bottom: 50px;
 
   a {
@@ -387,6 +386,7 @@ footer {
   h5 {
     margin-top: 70px;
     font-size: 21px;
+    margin-bottom: 60px;
 
     a {
       color: black;
@@ -395,6 +395,10 @@ footer {
         text-decoration: underline;
       }
     }
+  }
+
+  img {
+    width: 65px;
   }
 }
 
@@ -517,7 +521,7 @@ footer {
 
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(80vh - 112px);
+    min-height: calc(79vh - 112px);
 
     div h2 {
       font-size: 105px;
@@ -616,7 +620,7 @@ footer {
     }
     
     #bg-img {
-      top: 54vw;
+      top: 24vh;
       width: 58vw;
       right: 17%;
     }
@@ -681,6 +685,11 @@ footer {
 
   header {
     padding-bottom: 30px;
+
+    a {
+      top: -4px;
+      padding: 10px 8px 9px 10px;
+    }
   }
 
   #hero-content {
@@ -705,6 +714,12 @@ footer {
     #scroll {
       bottom: 22vh;
     }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  #hero-content div h2 {
+    font-size: 50px;
   }
 }
 

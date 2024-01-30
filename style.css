@@ -319,11 +319,10 @@ header a {
 
 #about {
   position: relative;
-  top: 2px;
   background-color: #fafafa;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 100px;
+  padding: 125px 100px 0;
   top: -50px;
 }
 #about article {
@@ -373,7 +372,7 @@ footer {
   position: relative;
   background-color: #fafafa;
   text-align: center;
-  padding-top: 275px;
+  padding-top: 265px;
   padding-bottom: 50px;
 }
 footer a {
@@ -391,12 +390,16 @@ footer button a {
 footer h5 {
   margin-top: 70px;
   font-size: 21px;
+  margin-bottom: 60px;
 }
 footer h5 a {
   color: black;
 }
 footer h5 a:hover {
   text-decoration: underline;
+}
+footer img {
+  width: 65px;
 }
 
 @media screen and (max-width: 988px) {
@@ -486,7 +489,7 @@ footer h5 a:hover {
 }
 @media screen and (max-width: 786px) {
   #hero-content {
-    min-height: calc(80vh - 112px);
+    min-height: calc(79vh - 112px);
   }
   #hero-content div h2 {
     font-size: 105px;
@@ -564,7 +567,7 @@ footer h5 a:hover {
     font-size: 58px;
   }
   #hero-content #bg-img {
-    top: 54vw;
+    top: 24vh;
     width: 58vw;
     right: 17%;
   }
@@ -612,6 +615,10 @@ footer h5 a:hover {
   header {
     padding-bottom: 30px;
   }
+  header a {
+    top: -4px;
+    padding: 10px 8px 9px 10px;
+  }
   #hero-content div h2 {
     font-size: 51px;
   }
@@ -626,6 +633,11 @@ footer h5 a:hover {
   }
   #hero-content #scroll {
     bottom: 22vh;
+  }
+}
+@media screen and (max-width: 343px) {
+  #hero-content div h2 {
+    font-size: 50px;
   }
 }
 @media screen and (max-height: 667px) {
