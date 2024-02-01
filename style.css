@@ -387,16 +387,21 @@ footer button a {
   font-size: 17px;
   letter-spacing: 2px;
 }
-footer h5 {
+footer h5, footer h6 {
   margin-top: 70px;
+}
+footer h5 a, footer h6 a {
+  color: black;
+}
+footer h5 a:hover, footer h6 a:hover {
+  text-decoration: underline;
+}
+footer h5 {
   font-size: 21px;
   margin-bottom: 60px;
 }
-footer h5 a {
-  color: black;
-}
-footer h5 a:hover {
-  text-decoration: underline;
+footer h6 {
+  font-size: 18px;
 }
 footer img {
   width: 65px;
@@ -550,6 +555,9 @@ footer img {
   footer h5 {
     font-size: 17px;
   }
+  footer h6 {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 430px) {
   header {
@@ -581,6 +589,9 @@ footer img {
   footer h5 {
     font-size: 16px;
   }
+  footer h6 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 400px) {
   body {
@@ -606,6 +617,9 @@ footer img {
   }
   footer h5 {
     font-size: 15px;
+  }
+  footer h6 {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 380px) {

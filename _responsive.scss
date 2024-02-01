@@ -190,8 +190,14 @@
     display: none;
   }
 
-  footer h5 {
-    font-size: 17px;
+  footer {
+    h5 {
+      font-size: 17px;
+    }
+
+    h6 {
+      font-size: 16px;
+    }
   }
 }
 
@@ -230,8 +236,14 @@
     font-weight: 600;
   }
 
-  footer h5 {
-    font-size: 16px;
+  footer {
+    h5 {
+      font-size: 16px;
+    }
+
+    h6 {
+      font-size: 15px;
+    }
   }
 }
 
@@ -269,8 +281,14 @@
     }
   }
 
-  footer h5 {
-    font-size: 15px;
+  footer {    
+    h5 {
+      font-size: 15px;
+    }
+
+    h6 {
+      font-size: 14px;
+    }
   }
 }
 

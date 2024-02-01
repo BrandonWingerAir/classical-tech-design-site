@@ -262,10 +262,8 @@ footer {
     letter-spacing: 2px;
   }
 
-  h5 {
+  h5, h6 {
     margin-top: 70px;
-    font-size: 21px;
-    margin-bottom: 60px;
 
     a {
       color: black;
@@ -274,6 +272,15 @@ footer {
         text-decoration: underline;
       }
     }
+  }
+
+  h5 {
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  h6 {
+    font-size: 18px;
   }
 
   img {
