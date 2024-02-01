@@ -1,4 +1,6 @@
 @use 'reset';
+@use 'responsive' as *;
+@use 'animatedLines';
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
@@ -51,7 +53,7 @@ header {
   a {
     position: relative;
     border: 1px solid #9e9e9e;
-    padding: 12px;
+    padding: 14px 12px 12px 15px;
     top: -12px;
     font-size: 21px;
     text-decoration: none;
@@ -131,129 +133,6 @@ header {
     right: 14%;
     width: 50vw;
     filter: saturate(0);
-  }
-}
-
-.loader
-{
-  position: absolute;
-  right: 10%;
-  top: 31%;
-  width: 600px;
-  height: 1px;
-  background: #bdbdbd;
-  opacity: 45%;
-}
-
-.loader:last-of-type {
-  left: 20%;
-  top: 88%;
-}
-
-.loader::before
-{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  background: #26a69a;
-  transform-origin: left;
-  animation: animate 10s linear infinite;
-  animation-delay: 1s;
-  animation-direction: alternate;
-}
-
-.loader:last-of-type::before {
-  animation-delay: 2s;
-  animation-direction: alternate-reverse;
-}
-
-@keyframes animate 
-{
-  0%,20%
-  {
-    transform: scaleX(0);
-  }
-  40%
-  {
-    opacity: 100%;
-   transform: scaleX(1);
-    transform-origin: left;
-  }
-  40.000001%,60%
-  {
-    transform: scaleX(1);
-    transform-origin: right;
-    }
-  80%,100%
-  {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
-	
-}
-
-.loader::after
-{
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  width: 4px;
-  height: 4px;
-  background: #26a69a;
-  border-radius: 50%;
-  animation: animateDot 10s linear infinite;
-  animation-delay: 1s;
-  animation-direction: alternate;
-  }
-
-  .loader:last-of-type::after {
-    animation-delay: 2s;
-    animation-direction: alternate-reverse;
-  }
-
-@keyframes animateDot
-{
-	0%
-  {
-  transform: translateY(-50%) scale(0);
-  }
-  5%
-  {  
-     transform: translateY(-50%) scale(1);
-  }
-  15%,20%
-  {
-      transform: translateY(-50%) scale(1);
-    box-shadow: 0 0 0 4px #26a69a22,
-      0 0 0 10px #26a69a22,
-      0 0 20px #26a69a,
-      0 0 40px 5px #26a69a,
-      0 0 60px 10px #26a69a;   
-  }
-  40%
-  {
-    transform: translateY(-50%)  translateX(600px) scale(1);
-  }
-  80%
-  {
-    transform: translateY(-50%) translateX(600px) scale(1) ;
-      box-shadow: 0 0 0 4px #26a69a22,
-      0 0 0 10px #26a69a22,
-      0 0 20px #26a69a,
-      0 0 40px 5px #26a69a,
-      0 0 60px 10px #26a69a; 
-  }
-  95%
-  {
-    transform: translateY(-50%) translateX(600px)  scale(1) ;
-      box-shadow: none;
-  }
-  100%
-  {
-    transform: translateY(-50%) translateX(600px) scale(0) ;
   }
 }
 
@@ -375,7 +254,7 @@ footer {
 
   button a {
     background: #212121;
-    padding: 14px 20px 10px;
+    padding: 14px 20px 11px 22px;
     height: 100px;
     font-family: 'Bebas Neue', sans-serif;
     color: white;
@@ -403,328 +282,37 @@ footer {
 }
 
 @media screen and (max-width: 988px) {
-  #hero-content {
-    padding-left: 42px;
-
-    div {
-      h2 {
-        font-size: 114px;
-
-        &:nth-of-type(2) {
-          margin-top: -10px;
-        }
-
-        span {
-          font-size: 135px;
-          top: 8px;
-        }
-      }
-
-      #services {
-        margin-top: 10px;
-      }
-    }
-
-    #bg-img {
-      position: absolute;
-      top: 19%;
-      right: 12%;
-      opacity: 54%;
-    }
-  }
-
-  .loader {
-    right: 16%;
-    width: 200px;
-  }
-
-  .loader:last-of-type {
-    top: 76%;
-    left: 16%;
-  }
-
-  @keyframes animateDot
-  {
-    0%
-    {
-    transform: translateY(-50%) scale(0);
-    }
-    5%
-    {  
-      transform: translateY(-50%) scale(1);
-    }
-    15%,20%
-    {
-        transform: translateY(-50%) scale(1);
-      box-shadow: 0 0 0 4px #26a69a22,
-        0 0 0 10px #26a69a22,
-        0 0 20px #26a69a,
-        0 0 40px 5px #26a69a,
-        0 0 60px 10px #26a69a;   
-    }
-    40%
-    {
-      transform: translateY(-50%)  translateX(200px) scale(1);
-    }
-    80%
-    {
-      transform: translateY(-50%) translateX(200px) scale(1) ;
-        box-shadow: 0 0 0 4px #26a69a22,
-        0 0 0 10px #26a69a22,
-        0 0 20px #26a69a,
-        0 0 40px 5px #26a69a,
-        0 0 60px 10px #26a69a; 
-    }
-    95%
-    {
-      transform: translateY(-50%) translateX(200px)  scale(1) ;
-        box-shadow: none;
-    }
-    100%
-    {
-      transform: translateY(-50%) translateX(200px) scale(0) ;
-    }
-  }
-
-  #scroll {
-    z-index: -1;
-    width: 84px;
-    height: 84px;
-    background: rgba($color: #000000, $alpha: 0.05);
-    color: #212121;
-    border-color: #212121;
-    font-weight: 600;
-    font-size: 12px;
-    bottom: 15vh;
-  }
-
-  #gap-cover {
-    display: none;
-  }
-
-  #about {
-    grid-template-columns: 1fr;
-    margin-bottom: 155px;
-    top: 55px;
-
-    #about-img {
-      text-align: center;
-      padding-right: 0;
-
-      img {
-        width: 240px;
-        top: 50%;
-      }
-    }
-  }
+  @include smallDesktop;
 }
 
 @media screen and (max-width: 786px) {
-  #hero-content {
-    min-height: calc(79vh - 112px);
-
-    div h2 {
-      font-size: 105px;
-    }
-  }
-  
-
-  #scroll {
-    width: 94px;
-    height: 94px;
-    font-size: 18px;
-  }
-
-  #about {
-    padding: 0;
-  }
+  @include tablet;
 }
 
 @media screen and (max-width: 750px) {
-  body {
-    padding: 40px;
-  }
-
-  #hero-content {
-    padding-left: 20px;
-
-    div h2 {
-      letter-spacing: -1px;
-      font-size: 78px;
-      -webkit-text-stroke-width: 2px;
-      
-      &:nth-of-type(2) {
-        margin-top: -12px;
-      }
-
-      span {
-        font-size: 72px;
-        top: 3px;
-        margin: 0 -4px;
-        -webkit-text-stroke-width: 3px;
-      }
-    }
-
-    #bg-img {
-      top: 21%;
-      width: 48vw;
-    }
-  }
-
-  #scroll {
-    z-index: 1;
-    width: 94px;
-    height: 94px;
-    font-size: 13px;
-  }
+  @include smallTablet;
 }
 
 @media screen and (max-width: 488px) {
-  #hero-content div h2 {
-    font-size: 68px;
-  }
-
-  #scroll {
-    width: 82px;
-    height: 82px;
-    bottom: 38vw;
-  }
-
-  .loader {
-    display: none;
-  }
-
-  footer h5 {
-    font-size: 17px;
-  }
+  @include xlPhone;
 }
 
 @media screen and (max-width: 430px) {
-  header {
-    padding-top: 10px;
-    padding-bottom: 46px;
-    
-    div h1 {
-      font-size: 22px;
-    }
-
-    a {
-      font-size: 16px;
-      top: -6px;
-    }
-  }
-
-  #hero-content {
-    div h2 {
-      font-size: 58px;
-    }
-    
-    #bg-img {
-      top: 24vh;
-      width: 58vw;
-      right: 17%;
-    }
-  }
-
-  #scroll {
-    z-index: -1;
-    width: 72px;
-    height: 72px;
-    font-size: 11px;
-    font-weight: 600;
-  }
-
-  footer h5 {
-    font-size: 16px;
-  }
+  @include largePhone;
 }
 
 @media screen and (max-width: 400px) {
-  body {
-    padding: 25px 35px 40px 35px;
-  }
-
-  header {
-    div {
-      h1 {
-        font-size: 20px;
-      }
-      
-      img {
-        width: 23px;
-        height: 23px;
-        bottom: -4px;
-      }
-    }
-
-    a {
-      letter-spacing: 2px;
-      top: -6px;
-    }
-  }
-
-  #hero-content div {
-    h2 {
-      font-size: 52px;
-    }
-
-    #services h3 {
-      font-size: 23px;
-    }
-  }
-
-  footer h5 {
-    font-size: 15px;
-  }
+  @include phone;
 }
 
 @media screen and (max-width: 380px) {
-  body {
-    padding-top: 25px;
-  }
-
-  header {
-    padding-bottom: 30px;
-
-    a {
-      top: -4px;
-      padding: 10px 8px 9px 10px;
-    }
-  }
-
-  #hero-content {
-    div {
-      h2 {
-        font-size: 51px;
-    
-        &:nth-of-type(2) {
-          margin-top: -10px;
-        }
-        
-        span {
-          font-size: 65px;
-        }
-      }
-
-      #services h3 {
-        font-size: 21px;
-      }
-    }
-  
-    #scroll {
-      bottom: 22vh;
-    }
-  }
+  @include smallPhone;
 }
 
 @media screen and (max-width: 343px) {
-  #hero-content div h2 {
-    font-size: 50px;
-  }
+  @include xsPhone;
 }
 
 @media screen and (max-height: 667px) {
-  #scroll {
-    display: none;
-  }
+  @include shortPhone;
 }
